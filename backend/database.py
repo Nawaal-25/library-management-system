@@ -1,8 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
-DATABASE_URL = "mysql+pymysql://root:root123@localhost:3307/library_db"
-
+DATABASE_URL = "mysql+pymysql://root:root123@mysql:3306/library_db"
 engine = create_engine(DATABASE_URL)
 
 SessionLocal = sessionmaker(
